@@ -121,7 +121,7 @@ class SelectorDIC(ModelSelector):
                     logL_word = hmm_model.score(X_1, lengths_1)
                     logL_word_sum += logL_word
             dic = logL - 1/(len(self.hwords) - 1) * logL_word_sum
-            print(dic)
+            #print(dic)
             #logL_list.append((hmm_model, logL))
             if dic > dic_previous:
                 dic_previous = dic
